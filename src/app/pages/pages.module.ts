@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CategoryComponent } from './category/category.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { FichaPacienteComponent } from './ficha.paciente/ficha.paciente.component';
-import { CitaMedicaComponent } from './cita.medica/cita.medica.component';
-
+import { ProductComponent } from './product/product.component';
+import { PagesComponent } from './pages.component';
 
 
 
 @NgModule({
-  declarations: [DashboardComponent, FichaPacienteComponent, CitaMedicaComponent],
-  imports: [
-    CommonModule
-  ],
-  exports: [DashboardComponent,FichaPacienteComponent,CitaMedicaComponent]
+  declarations: [CategoryComponent, DashboardComponent, ProductComponent],
+  imports: [CommonModule],
+  exports: [CategoryComponent, DashboardComponent, ProductComponent],
 })
-export class PagesModule { }
+export class PagesModule {}
